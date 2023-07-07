@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>19 Drawing</title>
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/main.min.css" />
 
@@ -12,6 +21,50 @@
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
-    <canvas id="drawing"></canvas>
+    <nav class="draw-menu">
+      <ul class="draw-menu-left">
+        <li>
+          <input type="color" class="draw-color" />
+        </li>
+        <li>
+          <button type="button" class="btn draw-eraser">
+            <i class="fa-solid fa-eraser"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn draw-plus">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn draw-size">5</button>
+        </li>
+        <li>
+          <button type="button" class="btn draw-minus">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </li>
+      </ul>
+
+      <ul class="draw-menu-right">
+        <li>
+          <button type="button" class="btn draw-save">
+            <i class="fa-solid fa-floppy-disk"></i>
+          </button>
+        </li>
+
+        <li>
+          <button type="button" class="btn draw-eraser-all">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <canvas
+      id="drawing"
+      width="1300"
+      height="500"
+      style="background-color: #fff; margin-top: 2rem"
+    ></canvas>
   </body>
 </html>
